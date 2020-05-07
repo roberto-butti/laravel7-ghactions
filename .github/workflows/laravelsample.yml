@@ -1,7 +1,3 @@
-
-
-
-
 name: LaravelTwitch
 
 on:
@@ -10,12 +6,11 @@ on:
 
 jobs:
   laravel-tests:
+    runs-on: ubuntu-latest
 
-  runs-on: ubuntu-latest
-
-  steps:
-  - uses: actions/checkout@v2
-  - name: sample
-    run: echo "Hello"
-  - name: sample
-    run: echo "Hello"
+    steps:
+    - uses: actions/checkout@v2
+    - name: sample
+      run: echo "Hello"
+    - name: sample
+      run: echo "Hello"
