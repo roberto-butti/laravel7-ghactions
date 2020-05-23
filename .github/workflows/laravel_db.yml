@@ -1,4 +1,4 @@
-name: Larave and Mysql
+name: Laravel and Mysql
 
 on:
   push:
