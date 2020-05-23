@@ -8,11 +8,11 @@ on:
 jobs:
   laravel-test:
 
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-  - uses: actions/checkout@v2
-  - name: Example
-    run: echo "Hello"
-  - name: Example2
-    run: echo "Hello2"
+    steps:
+    - uses: actions/checkout@v2
+    - name: Example
+      run: echo "Hello"
+    - name: Example2
+      run: echo "Hello2"
