@@ -37,4 +37,4 @@ jobs:
         DB_PASSWORD: password
       run: |
         php artisan migrate
-        php artisan test
+        vendor/phpunit/phpunit/phpunit
