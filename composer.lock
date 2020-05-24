@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
+    "content-hash": "409713ae1bc7fe9ba9bbd2cbbbd32ac5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -772,6 +772,66 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.6.1"
             },
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "hi-folks/lara-lens",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Hi-Folks/lara-lens.git",
+                "reference": "2390544ae8d0623a52b31c7495fe44bfde95f202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Hi-Folks/lara-lens/zipball/2390544ae8d0623a52b31c7495fe44bfde95f202",
+                "reference": "2390544ae8d0623a52b31c7495fe44bfde95f202",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "HiFolks\\LaraLens\\LaraLensServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaraLens": "HiFolks\\LaraLens\\LaraLensFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "HiFolks\\LaraLens\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto Butti",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Diagnostic command for configuration, db connection, http request",
+            "homepage": "https://github.com/hi-folks/lara-lens",
+            "keywords": [
+                "hi-folks",
+                "lara-lens"
+            ],
+            "support": {
+                "issues": "https://github.com/Hi-Folks/lara-lens/issues",
+                "source": "https://github.com/Hi-Folks/lara-lens/tree/master"
+            },
+            "time": "2020-05-22T06:29:00+00:00"
         },
         {
             "name": "laravel/framework",
