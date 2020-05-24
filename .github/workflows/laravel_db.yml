@@ -11,7 +11,7 @@ jobs:
       mysql:
         image: mysql:5.7
         env:
-          MYSQL_ROOT_PASSWORD: password
+          MYSQL_ROOT_PASSWORD: ${{ secrets.DB_PASSWORD }}
           MYSQL_DATABASE: db_test
         ports:
           - 33306:3306
@@ -34,7 +34,7 @@ jobs:
         DB_DATABASE: db_test
         DB_PORT: 33306
         DB_USER: root
-        DB_PASSWORD: password
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
       run: |
         php artisan migrate
         vendor/phpunit/phpunit/phpunit
