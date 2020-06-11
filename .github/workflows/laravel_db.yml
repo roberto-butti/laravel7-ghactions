@@ -1,21 +1,30 @@
 name: Laravel Automated Test
-
 on:
   push:
-    branches: [ develop ]
-
+    branches: [ master, develop. feature/** ]
+  pull_request:
+    branches: [ master ]
 jobs:
   laravel-test-withdb:
     runs-on: ubuntu-latest
+    # Service container to run with "laravel-test-withdb"
     services:
+      # Label used to access the service container
       mysql:
+        # Docker Hub image (also with version)
         image: mysql:5.7
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.DB_PASSWORD }}
           MYSQL_DATABASE: db_test
+        ## map the "external" 33306 port with the "internal" 3306
         ports:
           - 33306:3306
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+        # Set health checks to wait until mysql database has started (it takes some seconds to start)
+        options: >-
+          --health-cmd="mysqladmin ping"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
 
 
     steps:
