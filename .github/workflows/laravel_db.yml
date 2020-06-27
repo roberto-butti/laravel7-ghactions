@@ -48,7 +48,7 @@ jobs:
     - name: Composer install
       # if: steps.actions-cache.outputs.cache-hit != 'true'
       # run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
-      run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist
+      run: composer install  --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist
     - name: Setup keys
       run: php artisan key:generate
     - name: Fix perms for dirs
