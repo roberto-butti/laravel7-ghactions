@@ -49,7 +49,7 @@ jobs:
         key: ${{ runner.OS }}-build-${{ hashFiles('**/composer.lock') }}
     - name: Setup env file
       run: cp .env.example .env
-    - name: Setup env file
+    - name: test ls
       run: ls -lao
     - name: Composer install
       if: steps.vendor-cache.outputs.cache-hit != 'true'
