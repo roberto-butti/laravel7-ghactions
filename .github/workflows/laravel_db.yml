@@ -30,7 +30,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Get Composer Cache Directory
+    - name: Get Composer Cache Directory 2
       id: composer-cache
       run: |
         echo "::set-output name=dir::$(composer config cache-files-dir)"
