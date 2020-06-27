@@ -43,7 +43,7 @@ jobs:
     - name: Setup env file
       run: cp .env.example .env
     - name: Composer install
-      if: steps.cache.outputs.cache-hit != 'true'
+      if: steps.composer-cache.outputs.cache-hit != 'true'
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
     - name: Setup keys
       run: php artisan key:generate
