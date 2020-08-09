@@ -755,16 +755,16 @@
         },
         {
             "name": "hi-folks/lara-lens",
-            "version": "v0.1.14",
+            "version": "v0.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Hi-Folks/lara-lens.git",
-                "reference": "2ad57d1d893055425032aa99dfa01ff40ef38451"
+                "reference": "ce7279068713b26c682be96b5ab00bcfb82b5663"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Hi-Folks/lara-lens/zipball/2ad57d1d893055425032aa99dfa01ff40ef38451",
-                "reference": "2ad57d1d893055425032aa99dfa01ff40ef38451",
+                "url": "https://api.github.com/repos/Hi-Folks/lara-lens/zipball/ce7279068713b26c682be96b5ab00bcfb82b5663",
+                "reference": "ce7279068713b26c682be96b5ab00bcfb82b5663",
                 "shasum": ""
             },
             "require": {
@@ -813,7 +813,7 @@
                 "laravel",
                 "package"
             ],
-            "time": "2020-08-04T15:37:26+00:00"
+            "time": "2020-08-09T13:59:19+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1403,16 +1403,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.7.0",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "21dce06dfbf0365c6a7cc8fdbdc995926c6a9300"
+                "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/21dce06dfbf0365c6a7cc8fdbdc995926c6a9300",
-                "reference": "21dce06dfbf0365c6a7cc8fdbdc995926c6a9300",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
+                "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
                 "shasum": ""
             },
             "require": {
@@ -1420,8 +1420,8 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "ircmaxell/php-yacc": "0.0.5",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+                "ircmaxell/php-yacc": "^0.0.6",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -1429,7 +1429,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.7-dev"
+                    "dev-master": "4.8-dev"
                 }
             },
             "autoload": {
@@ -1451,7 +1451,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-07-25T13:18:53+00:00"
+            "time": "2020-08-09T10:23:20+00:00"
         },
         {
             "name": "opis/closure",
