@@ -59,12 +59,12 @@ jobs:
       run: chmod -R 777 storage bootstrap/cache
     - name: Migrate database
       env:
-        DB_CONNECTION: 'sqlite'
-        DB_DATABASE: 'db.sqlite'
+        B_CONNECTION: mysql
+        DB_DATABASE: db_test
         DB_PORT: 33306
         DB_USER: root
         DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-      run: touch db.sqlite; php artisan migrate
+      run: php artisan migrate
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: mysql
