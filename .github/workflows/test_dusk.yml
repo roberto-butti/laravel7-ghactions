@@ -58,8 +58,9 @@ jobs:
         run: |
           chmod -R 0755 vendor/laravel/dusk/bin/
           php artisan migrate
-          php artisan dusk
           php artisan laralens:diagnostic
+          php artisan dusk
+
 
         env:
           APP_ENV: local
