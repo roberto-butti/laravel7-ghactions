@@ -57,7 +57,10 @@ jobs:
       - name: Run Dusk Tests
         run: |
           chmod -R 0755 vendor/laravel/dusk/bin/
+          php artisan migrate
           php artisan dusk
+          php artisan laralens:diagnostic
+
         env:
           APP_ENV: local
           APP_URL: "http://127.0.0.1:8000"
