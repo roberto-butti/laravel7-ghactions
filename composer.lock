@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0dd37df345bbb955aad8fdbf84963d2",
+    "content-hash": "8e51053916ed30cae7b07914bae9b0f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -801,22 +801,23 @@
         },
         {
             "name": "hi-folks/lara-lens",
-            "version": "v0.1.20",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Hi-Folks/lara-lens.git",
-                "reference": "1da94dbcfcc7275e13b8c60f1f658685d19e3cf6"
+                "reference": "a7b771f8eb51dd6d17a78a2dd74fa1599934e635"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Hi-Folks/lara-lens/zipball/1da94dbcfcc7275e13b8c60f1f658685d19e3cf6",
-                "reference": "1da94dbcfcc7275e13b8c60f1f658685d19e3cf6",
+                "url": "https://api.github.com/repos/Hi-Folks/lara-lens/zipball/a7b771f8eb51dd6d17a78a2dd74fa1599934e635",
+                "reference": "a7b771f8eb51dd6d17a78a2dd74fa1599934e635",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "guzzlehttp/guzzle": "^6.0|^7.0",
                 "illuminate/support": "^6.0|^7.0|^8.0",
-                "php": "^7.2"
+                "php": "^7.2|^8.0"
             },
             "require-dev": {
                 "orchestra/testbench": "4.*|5.*|6.*",
@@ -862,9 +863,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Hi-Folks/lara-lens/issues",
-                "source": "https://github.com/Hi-Folks/lara-lens/tree/v0.1.20"
+                "source": "https://github.com/Hi-Folks/lara-lens/tree/v0.2.2"
             },
-            "time": "2020-09-11T14:14:18+00:00"
+            "time": "2020-11-05T17:37:07+00:00"
         },
         {
             "name": "laravel/framework",
